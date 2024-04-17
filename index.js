@@ -1,8 +1,15 @@
-const express = require("express")
-const app = express()
+const express = require("express");
 
-app.use("/api", require("./lib/handler"))
+const app = express();
 
-app.listen(3000,()=>{
-console.log("serveris up on 3000");
+app.use("/api",require("./lib/handler"));
+
+
+
+
+
+
+
+app.listen(8888, () => {
+  console.log("server is up on 8888");
 });
